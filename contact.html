@@ -131,6 +131,9 @@
 
     <div class="contact-section">
         <form action="https://formsubmit.co/info@click4me.co.uk" method="POST">
+            <!-- Redirect to Thank You page after submit -->
+            <input type="hidden" name="_next" value="https://shayakarniol.github.io/my-website/thankyou.html">
+            
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
