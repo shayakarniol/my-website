@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click4Me - About Us</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #333;
+        }
+        header {
+            background-color: #0d6efd;
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            height: 70px;
+            border-radius: 15px;
+            background-color: white;
+            padding: 5px;
+        }
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(to right, #0d6efd, #4dabf7);
+            color: white;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: slideUp 1.2s ease-in-out;
+        }
+        .hero p {
+            font-size: 1.2em;
+            animation: slideUp 1.5s ease-in-out;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeUp 1s forwards;
+        }
+        .card:nth-child(1) { animation-delay: 0.3s; }
+        .card:nth-child(2) { animation-delay: 0.6s; }
+        .card h2 {
+            margin-bottom: 15px;
+            color: #0d6efd;
+        }
+        .benefits {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .benefit {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            width: 200px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeUp 1s forwards;
+        }
+        .benefit:nth-child(1) { animation-delay: 0.4s; }
+        .benefit:nth-child(2) { animation-delay: 0.6s; }
+        .benefit:nth-child(3) { animation-delay: 0.8s; }
+        .benefit span {
+            display: block;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .cta {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .cta a {
+            display: inline-block;
+            background-color: #0d6efd;
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+            animation: pulse 2s infinite;
+        }
+        .cta a:hover {
+            background-color: #0846b8;
+        }
+        footer {
+            background-color: #0d6efd;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 50px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @keyframes slideUp {
+            from {opacity: 0; transform: translateY(30px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+        @keyframes fadeUp {
+            to {opacity: 1; transform: translateY(0);}
+        }
+        @keyframes pulse {
+            0% {transform: scale(1);}
+            50% {transform: scale(1.05);}
+            100% {transform: scale(1);}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Click4Me Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>About Click4Me</h1>
+        <p>We provide personal internet services for people who want to save time and avoid online hassle.</p>
+    </section>
+
+    <div class="content">
+        <div class="card">
+            <h2>Our Mission</h2>
+            <p>Our mission is to simplify the online world for our clients. From booking flights to filling official forms, we do it all quickly, securely, and with a smile.</p>
+        </div>
+        <div class="card">
+            <h2>Why Choose Us</h2>
+            <div class="benefits">
+                <div class="benefit"><span>⏱</span>Save Time</div>
+                <div class="benefit"><span>🔒</span>Secure & Reliable</div>
+                <div class="benefit"><span>😀</span>Friendly Service</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <a href="contact.html">Contact Us Today</a>
+    </div>
+
+    <footer>
+        &copy; 2025 Click4Me. All rights reserved.
+    </footer>
+</body>
+</html>
